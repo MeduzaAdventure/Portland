@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i|Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Portland</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="container-fruid bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
+                <div>
+                    <button class="btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="collapseExample" aria-expanded="true" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                </div>
+                <div class="navbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Devices</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Delivery & Payment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Guarantee</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a class="btn" href="#">Cart <span class="badge badge-secondary">0</span></a>
+                    <button type="button" class="btn btn-primary">sign in</button>
+                </div>
+            </nav>
+            <div class="collapse navbar" id="navbarSupportedContent">
+                <ul class="nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">top sales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">brand focus</a>
+                    </li>
+                    <li class="nav-item active">
+                    <a class="nav-link text-uppercase" href="#">hi-tech</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#">best sellers</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#">projects</a>
+                    </li>
+                </ul>
+                <div>
+                    <form class="form-inline">
+                        <label for="search">Support</label>
+                        <input class="form-control mr-sm-2" type="search" placeholder="i'm looking for.." aria-label="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- тут должен быть слайдер -->
+
+    <!-- panel -->
+    <div class="container mt-3 form-inline">
+        <div class="d-flex align-content-center col-3 bg-light ">
+            <p class="text-uppercase">Sort by</p>
+            <div class="dropdown">
+                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    best matches
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-7 bg-light ">
+            <div>
+                <form class="form-inline" action="">
+                    <label for="">Keywords</label>
+                    <input type="text" placeholder="Tablet">
+                </form>
+            </div>
+            <div>
+                <form class="form-inline" action="">
+                    <label for="">Price</label>
+                    <input type="text" placeholder="10">
+                    <label for="">-</label>
+                    <input type="text" placeholder="100">
+                    <input type="checkbox">
+                    <label>Free Shipping</label>
+                </form>
+            </div>
+        </div>
+        <div class="col-2 bg-light ">
+            <p class="text-uppercase">Ship To</p>
+            <div class="dropdown">
+                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    USA
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">UK</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="card-board">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Top Sales
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Cras justo odio</li>
+                                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                                    <li class="list-group-item">Morbi leo risus</li>
+                                    <li class="list-group-item">Porta ac consectetur ac</li>
+                                    <li class="list-group-item">Vestibulum at eros</li>
+                                </ul>
+                            </div>
+                        </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Brand Focus
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <ul class="list-group">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Morbi leo risus</li>
+                                <li class="list-group-item">Porta ac consectetur ac</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Hi-Tech
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <ul class="list-group">
+                                <li class="list-group-item">CELL PHONES</li>
+                                <li class="list-group-item">CAMERAS</li>
+                                <li class="list-group-item">COMPUTERS</li>
+                                <li class="list-group-item">TV AUDIO</li>
+                                <li class="list-group-item">VIDEO GAMES</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h5 class="mb-0">
+                                <button class="btn" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Home
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <ul class="list-group">
+                                <li class="list-group-item">CELL PHONES</li>
+                                <li class="list-group-item">CAMERAS</li>
+                                <li class="list-group-item">COMPUTERS</li>
+                                <li class="list-group-item">TV AUDIO</li>
+                                <li class="list-group-item">VIDEO GAMES</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h5 class="mb-0">
+                                <button class="btn" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Sale
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <ul class="list-group">
+                                <li class="list-group-item">CELL PHONES</li>
+                                <li class="list-group-item">CAMERAS</li>
+                                <li class="list-group-item">COMPUTERS</li>
+                                <li class="list-group-item">TV AUDIO</li>
+                                <li class="list-group-item">VIDEO GAMES</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class=" bg-light">
+                    <form class="form-control">
+                        <label class="block" for="">Available</label>
+                        <input type="radio">
+                        <label>Free Shipping</label>
+                        <input type="radio">
+                        <label>Free Shipping</label>
+                        <label for="">Available</label>
+                        <input type="checkbox">
+                        <label>Free Shipping</label>
+                        <input type="checkbox">
+                        <label>Free Shipping</label>
+                        <input type="checkbox">
+                        <label>Free Shipping</label>
+                        <input type="checkbox">
+                        <label>Free Shipping</label>
+                    </form>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="grid">
+                    <div class="grid-item grid-1">
+                        <div class="grid-img">
+                            <img src="img/grid1.png" alt="">
+                        </div>
+                        <p class="prod-name">Apple TV 32GB</p>
+                        <p class="prod-color">black</p>
+                        <p class="prod-price">$44.99</p>
+                    </div>
+                    <div class="grid-item grid-2">
+                        <div class="grid-img">
+                            <img src="img/grid2.png" alt="">
+                        </div>
+
+                        <p class="prod-name">Pebble Time</p>
+                        <p class="prod-color">red</p>
+                        <p class="prod-price">$29.99</p>
+                    </div>
+                    <div class="grid-item grid-3">
+                        <div class="grid-img">
+                            <img src="img/grid3.png" alt="">
+                        </div>
+
+                        <p class="prod-name">Zendure 4-Port USB</p>
+                        <p class="prod-color">white</p>
+                        <p class="prod-price">$49.99</p>
+                    </div>
+                    <div class="grid-item grid-4">
+                        <div class="grid-img">
+                            <img src="img/grid4.png" alt="">
+                        </div>
+
+                        <p class="prod-name">Withings Smart Body<br>Analyzer ws-50</p>
+                        <p class="prod-color">black</p>
+                        <p class="prod-price">$39.99</p>
+                    </div>
+                    <div class="grid-item grid-5">
+                        <p class="prod-name">JBL Charge 2+</p>
+                        <p class="prod-color">black</p>
+                        <p class="prod-price">$44.99</p>
+                    </div>
+                    <div class="grid-item grid-6">
+                        <div class="grid-img">
+                            <img src="img/grid6.png" alt="">
+                        </div>
+                        <p class="prod-name">Ollo Clip New</p>
+                        <p class="prod-color">silver</p>
+                        <p class="prod-price">$19.99</p>
+                    </div>
+                    <div class="grid-item grid-7">
+                        <div class="grid-img">
+                            <img src="img/grid7.png" alt="">
+                        </div>
+                        <p class="prod-name">Fitbit Charge HR Heart Rate and Activity Tracker</p>
+                        <p class="prod-color">black</p>
+                        <p class="prod-price">$19.99</p>
+                    </div>
+                    <div class="grid-item grid-8">
+                        <div class="grid-img">
+                            <img src="img/grid8.png" alt="">
+                        </div>
+
+                        <p class="prod-name">Apple Watch Sport 38mm Silver Aluminum Case</p>
+                        <p class="prod-color">white</p>
+                        <p class="prod-price">$49.99</p>
+                    </div>
+                    <div class="grid-item grid-9">
+                        <div class="grid-img">
+                            <img src="img/grid9.png" alt="">
+                        </div>
+                        <p class="prod-name">Bose SoundLink<br>On-Ear Headphones</p>
+                        <p class="prod-color">white</p>
+                        <p class="prod-price">$119.99</p>
+                    </div>
+                    <div class="grid-item grid-10">
+                        <div class="grid-img">
+                            <img src="img/grid10.png" alt="">
+                        </div>
+                        <p class="prod-name">Sonos Play-1 Wireless<br>HiFi System</p>
+                        <p class="prod-color">black</p>
+                        <p class="prod-price">$99.99</p>
+                    </div>
+                    <div class="grid-item grid-11">
+                        <p class="prod-name">Apple TV 32GB</p>
+                        <p class="prod-color">black</p>
+                        <p class="prod-price">$44.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-3">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                        <li class="page-item"><a class="page-link" href="#">8</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+        <div class="row page-sales">
+            <div class="col-12 d-flex justify-content-center title-sales">
+                <h5>Best Sellers</h5>
+            </div>
+            <div class="col-12 d-flex justify-content-around">
+                <div class="sale-item">
+                    <div class="sale-img">
+                        <img src="img/sale1.png" alt="">
+                    </div>
+                    <p class="sale-name">Beanie</p>
+                    <p class="sale-color">green</p>
+                    <p class="sale-price"><span>$39.99 </span> $29.99</p>
+                </div>
+                <div class="sale-item sale-b">
+                    <div class="sale-img">
+                        <img src="img/sale2.png" alt="">
+                    </div>
+                    <p class="sale-name">T-Shirt With a Print</p>
+                    <p class="sale-color">dark blue</p>
+                    <p class="sale-price"><span>$29.99 </span> $19.99</p>
+                </div>
+                <div class="sale-item sale-b">
+                    <div class="sale-img">
+                        <img src="img/sale3.png" alt="">
+                    </div>
+                    <p class="sale-name">Pile-Lined Hooded Jacket</p>
+                    <p class="sale-color">dark blue</p>
+                    <p class="sale-price"><span>$49.99 </span> $39.99</p>
+                </div>
+                <div class="sale-item">
+                    <div class="sale-img">
+                        <img src="img/sale4.png" alt="">
+                    </div>
+                    <p class="sale-name">Trainers</p>
+                    <p class="sale-color">space gray</p>
+                    <p class="sale-price"><span>$39.99 </span> $29.99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- customers -->
+    <div class="container-fluid page-cust">
+        <div class="container">
+            <div class="col-12 d-flex justify-content-center title-cust">
+                <h1>What Our Customers Have to Say</h1>
+            </div>
+            <div class="col-12 d-flex justify-content-center post-title-cust">
+                <h4>Couple of Words About This Stories Section</h4>
+            </div>
+            <div class="col-12 d-flex justify-content-around">
+                <div class="col-3">
+                    <div class="d-flex align-items-center cust-info">
+                        <img class="avatar" src="img/cust1.png" alt="">
+                        <p class="cust-name">Celia Fields<br><span>UX Expert</span></p>
+                    </div>
+                    <div>
+                        <p class="cust-text">This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="d-flex align-items-center cust-info">
+                        <img class="avatar" src="img/cust2.png" alt="">
+                        <p class="cust-name">Alexander Lee<br><span>Founder</span></p>
+                    </div>
+                    <div>
+                        <p class="cust-text">Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="d-flex align-items-center cust-info">
+                        <img class="avatar" src="img/cust3.png" alt="">
+                        <p class="cust-name">Lenora Sandoval<br><span>Product Manager</span></p>
+                    </div>
+                    <div>
+                        <p class="cust-text">This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!'she said.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid page-footer">
+        <div class="container">
+            <div class="row footer-up">
+                <nav class="navbar col-12">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo-light.png" alt="">
+                    </a>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#" class="icon-tw"><span></span></a>
+                        </li>
+                        <li class="nav-item icon-m">
+                            <a href="#" class="icon-fb"><span></span></a>
+                        </li>
+                        <li class="nav-item icon-m">
+                            <a href="#" class="icon-gp"><span></span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row footer-down">
+                <nav class="navbar col-12">
+                    <p class="footer-text ">She gave my mother such a turn, that I have always been convinced I am indebted to Miss <br> Betsey for having been born on a Friday.</p>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#">Privacy Policy</a> 
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Terms And Conditions</a> 
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
