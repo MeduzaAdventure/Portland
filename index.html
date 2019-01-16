@@ -11,9 +11,9 @@
 </head>
 <body>
     <!-- header -->
-    <div class="container-fruid bg-light">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
+    <div class="container-fruid header">
+        <div class="container header">
+            <nav class="navbar navbar-expand-lg navbar-light  d-flex justify-content-between">
                 <div>
                     <button class="btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="collapseExample" aria-expanded="true" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@
                             <img src="img/logo.png" alt="">
                         </a>
                 </div>
-                <div class="navbar">
+                <div class="navbar nav-main">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Home</a>
@@ -42,11 +42,11 @@
                     </ul>
                 </div>
                 <div>
-                    <a class="btn" href="#">Cart <span class="badge badge-secondary">0</span></a>
-                    <button type="button" class="btn btn-primary">sign in</button>
+                    <a class="btn btn-cart" href="#"><img src="img/cart-icon.png" alt=""> CART <span class="badge badge-pill badge-secondary">0</span></a>
+                    <button type="button" class="btn btn-outline-dark badge-pill btn-sign">SIGN IN</button>
                 </div>
             </nav>
-            <div class="collapse navbar" id="navbarSupportedContent">
+            <div class="collapse navbar nav-sec" id="navbarSupportedContent">
                 <ul class="nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link text-uppercase" href="#">top sales</a>
@@ -64,10 +64,11 @@
                     <a class="nav-link text-uppercase" href="#">projects</a>
                     </li>
                 </ul>
-                <div>
+                <a class="nav-link text-uppercase" href="#">Support</a>
+                <div class="search">
                     <form class="form-inline">
-                        <label for="search">Support</label>
-                        <input class="form-control mr-sm-2" type="search" placeholder="i'm looking for.." aria-label="Search">
+                        <img class="icon-search" src="img/search-icon.png" alt="">
+                        <input class="form-control text-search" type="search" placeholder="I'm looking for ..." aria-label="Search">
                     </form>
                 </div>
             </div>
@@ -77,46 +78,54 @@
     <!-- тут должен быть слайдер -->
 
     <!-- panel -->
-    <div class="container mt-3 form-inline">
-        <div class="d-flex align-content-center col-3 bg-light ">
-            <p class="text-uppercase">Sort by</p>
-            <div class="dropdown">
-                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    best matches
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+    <div class="container top-page">
+        <div class="row">
+            <div class="d-flex col-3 dd-panel align-items-center justify-content-around">
+                <p class="text-uppercase">Sort by:</p>
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        best matches
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-7 bg-light ">
-            <div>
-                <form class="form-inline" action="">
-                    <label for="">Keywords</label>
-                    <input type="text" placeholder="Tablet">
-                </form>
+            <div class="col-7 form-panel d-flex justify-content-around">
+                <div class="d-flex justify-content-around">
+                    <form class="form-inline" action="">
+                        <label class="text-uppercase" for="">Keywords</label>
+                        <input class="in1" type="text" placeholder="Tablet">
+                    </form>
+                </div>
+                <div class="d-flex justify-content-around">
+                    <form class="form-inline" action="">
+                        <label class="text-uppercase" for="">Price </label>
+                        <input class="in2" type="text" value="10">
+                        <label for=""> - </label>
+                        <input class="in2" type="text" value="100">
+                        
+                    </form>
+                </div>
+                <div>
+                <label class="control control-checkbox in3">
+                        Free Shipping
+                            <input type="checkbox" checked="checked" />
+                        <div class="control_indicator"></div>
+                    </label>
+                </div>
             </div>
-            <div>
-                <form class="form-inline" action="">
-                    <label for="">Price</label>
-                    <input type="text" placeholder="10">
-                    <label for="">-</label>
-                    <input type="text" placeholder="100">
-                    <input type="checkbox">
-                    <label>Free Shipping</label>
-                </form>
-            </div>
-        </div>
-        <div class="col-2 bg-light ">
-            <p class="text-uppercase">Ship To</p>
-            <div class="dropdown">
-                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    USA
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">UK</a>
+            <div class="d-flex col-2 dd-panel align-items-center justify-content-around">
+                <p class="text-uppercase">Ship To</p>
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        USA
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">UK</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -220,23 +229,97 @@
                     </div>
                 </div>
                 </div>
-                <div class=" bg-light">
-                    <form class="form-control">
-                        <label class="block" for="">Available</label>
-                        <input type="radio">
-                        <label>Free Shipping</label>
-                        <input type="radio">
-                        <label>Free Shipping</label>
-                        <label for="">Available</label>
-                        <input type="checkbox">
-                        <label>Free Shipping</label>
-                        <input type="checkbox">
-                        <label>Free Shipping</label>
-                        <input type="checkbox">
-                        <label>Free Shipping</label>
-                        <input type="checkbox">
-                        <label>Free Shipping</label>
-                    </form>
+                <div class="form-panel-1">
+                    <div class="bor-pan">
+                        <h4 class="title-panel">Available</h4>  
+                    </div>
+                    <div class="d-flex justify-content-between item-row">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" checked="checked" id="customRadio1" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio1">In Storage</label>
+                        </div>
+                        <p class="panel-mark">45</p>
+                    </div>
+                    <div class="d-flex justify-content-between item-row">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio2">In Online-Shop</label>
+                        </div>
+                        <p class="panel-mark">12</p>
+                    </div>
+                    <div class="d-flex justify-content-between bor-pan">
+                        <h4 class="title-panel">Brands</h4>
+                        <a class="panel-link" href="#">ALL</a>
+                    </div>
+                    <div class="d-flex justify-content-between item-row">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" checked="checked" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Apple</label>
+                        </div>
+                        <p class="panel-mark">32</p>
+                    </div>
+                    <div class="d-flex justify-content-between item-row">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                            <label class="custom-control-label" for="customCheck2">JBL</label>
+                        </div>
+                        <p class="panel-mark">14</p>
+                    </div>
+                    <div class="d-flex justify-content-between item-row">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3">Bose</label>
+                        </div>
+                        <p class="panel-mark">3</p>
+                    </div>
+                    <div class="d-flex justify-content-between item-row">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                            <label class="custom-control-label" for="customCheck4">Nest</label>
+                        </div>
+                        <p class="panel-mark">5</p>
+                    </div>
+                </div>
+                <div class="form-panel-2">
+                    <div class="d-flex justify-content-between bor-pan">
+                        <h4 class="title-panel">Condition</h4>
+                        <a class="panel-link" href="#">SEE ALL</a>
+                    </div>
+                    <div class="custom-control custom-checkbox item-row-2">
+                        <input type="checkbox" checked="checked" class="custom-control-input" id="customCheck5">
+                        <label class="custom-control-label" for="customCheck5">New</label>
+                    </div>
+                    <div class="custom-control custom-checkbox item-row-2">
+                        <input type="checkbox" class="custom-control-input" id="customCheck6">
+                        <label class="custom-control-label" for="customCheck6">Manufacturer Refurbished</label>
+                    </div>
+                    <div class="custom-control custom-checkbox item-row-2">
+                        <input type="checkbox" class="custom-control-input" id="customCheck7">
+                        <label class="custom-control-label" for="customCheck7">Seller Refurbished</label>
+                    </div>
+                    <div class="custom-control custom-checkbox item-row-2">
+                        <input type="checkbox" checked="checked" class="custom-control-input" id="customCheck8">
+                        <label class="custom-control-label" for="customCheck8">Used</label>
+                    </div>
+                    <div class="custom-control custom-checkbox item-row-2">
+                        <input type="checkbox" class="custom-control-input" id="customCheck9">
+                        <label class="custom-control-label" for="customCheck9">For Parts or not Working</label>
+                    </div>
+                </div>
+                <div class="form-panel-3">
+                    <div class="bor-pan" >
+                        <h4 class="title-panel">Delivery Options</h4>  
+                    </div>
+                    <div class="d-flex justify-content-around item-row">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" checked="checked" id="customRadio3" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio3">FREE</label>
+                        </div>
+                        <div class="custom-control custom-radio item-row">
+                            <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio4">$4.99</label>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-9">
@@ -330,73 +413,77 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 mt-3">
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item active"><a class="page-link" href="#">4</a></li>
-                        <li class="page-item"><a class="page-link" href="#">5</a></li>
-                        <li class="page-item"><a class="page-link" href="#">6</a></li>
-                        <li class="page-item"><a class="page-link" href="#">7</a></li>
-                        <li class="page-item"><a class="page-link" href="#">8</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-        </div>
-        <div class="row page-sales">
-            <div class="col-12 d-flex justify-content-center title-sales">
-                <h5>Best Sellers</h5>
-            </div>
-            <div class="col-12 d-flex justify-content-around">
-                <div class="sale-item">
-                    <div class="sale-img">
-                        <img src="img/sale1.png" alt="">
-                    </div>
-                    <p class="sale-name">Beanie</p>
-                    <p class="sale-color">green</p>
-                    <p class="sale-price"><span>$39.99 </span> $29.99</p>
-                </div>
-                <div class="sale-item sale-b">
-                    <div class="sale-img">
-                        <img src="img/sale2.png" alt="">
-                    </div>
-                    <p class="sale-name">T-Shirt With a Print</p>
-                    <p class="sale-color">dark blue</p>
-                    <p class="sale-price"><span>$29.99 </span> $19.99</p>
-                </div>
-                <div class="sale-item sale-b">
-                    <div class="sale-img">
-                        <img src="img/sale3.png" alt="">
-                    </div>
-                    <p class="sale-name">Pile-Lined Hooded Jacket</p>
-                    <p class="sale-color">dark blue</p>
-                    <p class="sale-price"><span>$49.99 </span> $39.99</p>
-                </div>
-                <div class="sale-item">
-                    <div class="sale-img">
-                        <img src="img/sale4.png" alt="">
-                    </div>
-                    <p class="sale-name">Trainers</p>
-                    <p class="sale-color">space gray</p>
-                    <p class="sale-price"><span>$39.99 </span> $29.99</p>
+        <div class="container page-numb">
+            <div class="row">
+                <div class="col-12 mt-3">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-around">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <img src="img/slide-icon.png" alt="">
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                            <li class="page-item"><a class="page-link" href="#">7</a></li>
+                            <li class="page-item"><a class="page-link" href="#">8</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <img src="img/slide-icon2.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="container">
+            <div class="row page-sales">
+                <div class="col-12 d-flex justify-content-center title-sales">
+                    <h5>Best Sellers</h5>
+                </div>
+                <div class="col-12 d-flex justify-content-around">
+                    <div class="sale-item">
+                        <div class="sale-img">
+                            <img src="img/sale1.png" alt="">
+                        </div>
+                        <p class="sale-name">Beanie</p>
+                        <p class="sale-color">green</p>
+                        <p class="sale-price"><span>$39.99 </span> $29.99</p>
+                    </div>
+                    <div class="sale-item sale-b">
+                        <div class="sale-img">
+                            <img src="img/sale2.png" alt="">
+                        </div>
+                        <p class="sale-name">T-Shirt With a Print</p>
+                        <p class="sale-color">dark blue</p>
+                        <p class="sale-price"><span>$29.99 </span> $19.99</p>
+                    </div>
+                    <div class="sale-item sale-b">
+                        <div class="sale-img">
+                            <img src="img/sale3.png" alt="">
+                        </div>
+                        <p class="sale-name">Pile-Lined Hooded Jacket</p>
+                        <p class="sale-color">dark blue</p>
+                        <p class="sale-price"><span>$49.99 </span> $39.99</p>
+                    </div>
+                    <div class="sale-item">
+                        <div class="sale-img">
+                            <img src="img/sale4.png" alt="">
+                        </div>
+                        <p class="sale-name">Trainers</p>
+                        <p class="sale-color">space gray</p>
+                        <p class="sale-price"><span>$39.99 </span> $29.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div> 
+    
     
     <!-- customers -->
     <div class="container-fluid page-cust">
@@ -448,7 +535,7 @@
                     <a class="navbar-brand" href="#">
                         <img src="img/logo-light.png" alt="">
                     </a>
-                    <ul class="nav">
+                    <ul class="nav nav-foot">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Home</a>
                         </li>
@@ -481,7 +568,7 @@
             <div class="row footer-down">
                 <nav class="navbar col-12">
                     <p class="footer-text ">She gave my mother such a turn, that I have always been convinced I am indebted to Miss <br> Betsey for having been born on a Friday.</p>
-                    <ul class="nav">
+                    <ul class="nav nav-down d-flex justify-content-between col-3">
                         <li class="nav-item">
                             <a href="#">Privacy Policy</a> 
                         </li>
