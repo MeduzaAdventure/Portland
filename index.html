@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png" data-mce-href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png" data-mce-href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png" data-mce-href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png" data-mce-href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png" data-mce-href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png" data-mce-href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png" data-mce-href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png" data-mce-href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png" data-mce-href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" data-mce-href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192" data-mce-href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" data-mce-href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" data-mce-href="/favicon-16x16.png">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i|Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
@@ -75,8 +88,36 @@
         </div>
     </div>
     
-    <!-- тут должен быть слайдер -->
-
+    <!-- carousel -->
+    <div class="container-fluid carousel-cust">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="img/banner1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="img/banner3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="img/banner2.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    
     <!-- panel -->
     <div class="container top-page">
         <div class="row">
@@ -354,15 +395,24 @@
                         <div class="grid-img">
                             <img src="img/grid4.png" alt="">
                         </div>
-
                         <p class="prod-name">Withings Smart Body<br>Analyzer ws-50</p>
                         <p class="prod-color">black</p>
                         <p class="prod-price">$39.99</p>
                     </div>
-                    <div class="grid-item grid-5">
-                        <p class="prod-name">JBL Charge 2+</p>
-                        <p class="prod-color">black</p>
-                        <p class="prod-price">$44.99</p>
+                    <div class="grid-item grid-5 d-flex align-items-end jbl">
+                        <div class="jbl-price">
+                            <p>$44.99</p>
+                        </div>
+                        <div class="jbl-panel d-flex justify-content-between align-items-center">
+                            <div>
+                                <p class="prod-name">JBL Charge 2+</p>
+                                <p class="prod-color">black</p>
+                            </div>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-jbl badge-pill">16GB</button>
+                                <button type="button" class="btn btn-jbl badge-pill">BUY NOW</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="grid-item grid-6">
                         <div class="grid-img">
@@ -406,8 +456,7 @@
                         <p class="prod-price">$99.99</p>
                     </div>
                     <div class="grid-item grid-11">
-                        <p class="prod-name">Apple TV 32GB</p>
-                        <p class="prod-color">black</p>
+                        <p class="prod-name mt-3">Nest Learning Thermostat,<br>3rd Generation</p>
                         <p class="prod-price">$44.99</p>
                     </div>
                 </div>
@@ -453,7 +502,7 @@
                         </div>
                         <p class="sale-name">Beanie</p>
                         <p class="sale-color">green</p>
-                        <p class="sale-price"><span>$39.99 </span> $29.99</p>
+                        <p class="sale-price"><span>$39.99</span> $29.99</p>
                     </div>
                     <div class="sale-item sale-b">
                         <div class="sale-img">
@@ -461,7 +510,7 @@
                         </div>
                         <p class="sale-name">T-Shirt With a Print</p>
                         <p class="sale-color">dark blue</p>
-                        <p class="sale-price"><span>$29.99 </span> $19.99</p>
+                        <p class="sale-price"><span>$29.99</span> $19.99</p>
                     </div>
                     <div class="sale-item sale-b">
                         <div class="sale-img">
@@ -469,7 +518,7 @@
                         </div>
                         <p class="sale-name">Pile-Lined Hooded Jacket</p>
                         <p class="sale-color">dark blue</p>
-                        <p class="sale-price"><span>$49.99 </span> $39.99</p>
+                        <p class="sale-price"><span>$49.99</span> $39.99</p>
                     </div>
                     <div class="sale-item">
                         <div class="sale-img">
@@ -477,7 +526,7 @@
                         </div>
                         <p class="sale-name">Trainers</p>
                         <p class="sale-color">space gray</p>
-                        <p class="sale-price"><span>$39.99 </span> $29.99</p>
+                        <p class="sale-price"><span>$39.99</span> $29.99</p>
                     </div>
                 </div>
             </div>

@@ -5,6 +5,7 @@ body{
 a{
     text-decoration: none; 
     color: #b9bed1;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 a:hover{
@@ -151,7 +152,7 @@ a:hover{
 }
 .prod-name{
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     color: #1c1e23;
     margin-bottom: 11px;
 }
@@ -176,7 +177,8 @@ a:hover{
 }
 .sale-item{
     text-align:  center;
-    flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
 }
 .sale-b{
     border-left: 1px solid #f0f2f7;
@@ -382,7 +384,59 @@ a:hover{
     text-decoration: underline;
     padding: 15px 0;
 }
+.carousel-cust{
+    padding: 0;
+}
+.jbl{
+    position: relative;
+}
+.jbl-panel{
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 9px 20px;
+    background: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: left;
+}
+.jbl-panel .prod-name{
+    margin-bottom: 0;
+}
+.jbl-price{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #1c1e23;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+.jbl-price p{
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+.btn-jbl{
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    border: 1px solid #f0f2f7;
+    padding: 5px 25px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.btn-jbl:hover{
+    background-color: #f0f2f7;
+}
+input:focus{
+    outline: none;
+}
 /* fix bootstrap */
+.carousel-indicators li {
+    width: 9px;
+    height: 10px;
+    border-radius: 100%;
+}
 .custom-control-input:checked~.custom-control-label::before {
     color: #fff;
     border-color: #00e2aa;
@@ -401,7 +455,6 @@ a:hover{
     padding: 11px 15px;
     border-radius: 100%;
     -webkit-box-shadow: 0px 5px 15px 0px rgba(222,224,229,1);
--moz-box-shadow: 0px 5px 15px 0px rgba(222,224,229,1);
 box-shadow: 0px 5px 15px 0px rgba(222,224,229,1);
 }
 .page-link {
@@ -425,7 +478,6 @@ box-shadow: 0px 5px 15px 0px rgba(222,224,229,1);
     background-color: #fff;
     border-color: none;
     -webkit-box-shadow: 0px 5px 15px 0px rgba(222,224,229,1);
-    -moz-box-shadow: 0px 5px 15px 0px rgba(222,224,229,1);
     box-shadow: 0px 5px 15px 0px rgba(222,224,229,1);
 }
 .page-item:first-child .page-link {
@@ -440,7 +492,8 @@ box-shadow: 0px 5px 15px 0px rgba(222,224,229,1);
     background-color: transparent; 
     border-color: none; 
     outline: 0; 
-    box-shadow: none;
+    -webkit-box-shadow: none; 
+            box-shadow: none;
 }
 .navbar-light .navbar-nav .nav-link {
     color: #343e5c;
@@ -506,6 +559,7 @@ box-shadow: 0px 5px 15px 0px rgba(222,224,229,1);
     padding-top: 6px;
     cursor: pointer;
     font-size: 13px;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
     .control input {
@@ -522,6 +576,7 @@ box-shadow: 0px 5px 15px 0px rgba(222,224,229,1);
     background: #e6e6e6;
     border: 0px hidden #000000;
     border-radius: 100%;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 .control-radio .control_indicator {
@@ -546,7 +601,8 @@ box-shadow: 0px 5px 15px 0px rgba(222,224,229,1);
     pointer-events: none;
 }
 .control_indicator:after {
-    box-sizing: unset;
+    -webkit-box-sizing: unset;
+            box-sizing: unset;
     content: '';
     position: absolute;
     display: none;
@@ -561,7 +617,8 @@ box-shadow: 0px 5px 15px 0px rgba(222,224,229,1);
     height: 8px;
     border: solid #ffffff;
     border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 .control-checkbox input:disabled ~ .control_indicator:after {
     border-color: #7b7b7b;
